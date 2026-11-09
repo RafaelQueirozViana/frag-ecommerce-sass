@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $cor-fundo;
+    color: $cor-texto;
+    font-family: $fonte-principal;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: $largura-maxima;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 40px 0;
+
+    >h2 {
+        margin-bottom: 24px;
+    }
+}
