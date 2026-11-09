@@ -1,0 +1,28 @@
+@mixin flex($direcao: row, $justificar: flex-start, $alinhar: stretch, $gap: 0) {
+    display: flex;
+    flex-direction: $direcao;
+    justify-content: $justificar;
+    align-items: $alinhar;
+    gap: $gap;
+}
+
+@mixin botao($fundo: $cor-destaque) {
+    display: inline-block;
+    padding: 12px 24px;
+    background: $fundo;
+    color: $cor-texto;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: $raio;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
