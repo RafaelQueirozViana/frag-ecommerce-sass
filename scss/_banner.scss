@@ -1,0 +1,28 @@
+.banner {
+    @include flex(column, center, flex-start, 12px);
+    margin-top: 24px;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, $cor-superficie, $cor-destaque);
+    border-radius: $raio;
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-weight: normal;
+    }
+
+    .banner-button {
+        @include botao(#ff7a00);
+        margin-top: 12px;
+    }
+
+    @include mobile {
+        padding: 40px 20px;
+
+        h1 {
+            font-size: 36px;
+        }
+    }
+}

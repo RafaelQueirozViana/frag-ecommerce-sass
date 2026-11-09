@@ -1,0 +1,30 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @include mobile {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+    padding: 24px;
+    background: $cor-superficie;
+    border-radius: $raio;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    h2 {
+        margin-bottom: 8px;
+        color: $cor-destaque;
+    }
+
+    p {
+        color: $cor-texto-suave;
+    }
+}
